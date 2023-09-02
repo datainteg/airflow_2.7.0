@@ -1,10 +1,10 @@
 # airflow_2.7.0
 ## Airflow Webserver details
-''''
+```
 user = airflow
 pass = airflow
 
-''''
+```
 
 
 for additional information click on it:
