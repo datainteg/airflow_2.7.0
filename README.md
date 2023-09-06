@@ -24,7 +24,8 @@ https://medium.com/@akshay03/how-to-install-apache-airflow-with-docker-container
 # Download the Source code from Git by using Git Clone Command as follows:
 
 git clone https://github.com/datainteg/airflow_2.7.0.git
-cd airflow_2.7.0
+mv airflow_2.7.0 airflow_main
+cd airflow_main
 
 
 # Firstly check the docker service active or not:
