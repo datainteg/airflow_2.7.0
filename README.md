@@ -37,10 +37,6 @@ sudo systemctl restart docker
 
 
 
-# you need to change webserver ip address according to you ip address in Docker-Compose.yml file :
-
-eg.  http://localhost:8080/health  change to ec2 ip address like http://65.03.22.210:8080
-
 
 # After docker service is up and running then Firstly initialize airflow database by using following Command:
 
@@ -51,6 +47,9 @@ sudo docker-compose up airflow-init
 
 sudo docker-compose up -d
 
+# Give 777 permissions on airflow_main directory
+
+sudo chmod 777 -R airflow_main
 ```
 
 ## 🔗 Links
