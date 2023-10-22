@@ -1,11 +1,11 @@
 
-# Airflow 2.7.0
+# Airflow 2.5.3
 
 ### Details:
 
-📦 PyPI: https://pypi.org/project/apache-airflow/2.7.0/
+📦 PyPI: https://pypi.org/project/apache-airflow/2.5.3/
 
-📚 Docs: https://airflow.apache.org/docs/apache-airflow/2.7.0/
+📚 Docs: https://airflow.apache.org/docs/apache-airflow/2.5.3/
 
 
 #### Airflow Webserver Details:
@@ -23,8 +23,8 @@ https://medium.com/@akshay03/how-to-install-apache-airflow-with-docker-container
 ```bash
 # Download the Source code from Git by using Git Clone Command as follows:
 
-git clone https://github.com/datainteg/airflow_2.7.0.git
-mv airflow_2.7.0 airflow_main
+git clone https://github.com/datainteg/airflow_2.5.3.git
+mv airflow_2.5.3 airflow_main
 cd airflow_main
 
 
