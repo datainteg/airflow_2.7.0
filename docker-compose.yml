@@ -15,9 +15,6 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
     - ./:/opt/airflow
-    #- ./dags:/opt/airflow/dags
-    #- ./logs:/opt/airflow/logs
-    #- ./plugins:/opt/airflow/plugins
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     redis:
@@ -55,12 +52,7 @@ services:
     <<: *airflow-common
     command: webserver
     ports:
-      - 8081:8080
-    healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8081/health"]
-      interval: 10s
-      timeout: 10s
-      retries: 5
+      - 8080:8080
     restart: always
 
   airflow-scheduler:
@@ -100,11 +92,6 @@ services:
     command: celery flower
     ports:
       - 5555:5555
-    healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
-      interval: 10s
-      timeout: 10s
-      retries: 5
     restart: always
 
 volumes:
