@@ -47,9 +47,11 @@ sudo docker-compose up airflow-init
 
 sudo docker-compose up -d
 
-# Give 777 permissions on airflow_main directory
+# If any restarting issue is comes then give 777 permissions on airflow_main directory And run follows command
 
 sudo chmod 777 -R airflow_main
+sudo docker-compose up airflow-init
+sudo docker-compose up -d
 ```
 
 ## 🔗 Links
